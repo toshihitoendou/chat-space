@@ -1,9 +1,5 @@
 # README
 
-|Column|Type|Options|
-|------|----|-------|
-|user_id|integer|null: false, foreign_key: true|
-|group_id|integer|null: false, foreign_key: true|
 
 |usersテーブル|
 |Column|Type|Options|
@@ -36,4 +32,3 @@
 |Association|
 |belongs_to :user|
 |belongs_to :group|
-aa
