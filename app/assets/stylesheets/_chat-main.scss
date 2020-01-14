@@ -1,0 +1,60 @@
+.chat-main {
+  width: calc(100vw - 300px);
+  float: left;
+   .main-header{
+    height: 100px;
+    height: calc(100vh - 90px);
+    padding: 0 40px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: solid 1px #eeeeee;
+    overflow: scroll;
+    .messages {
+      height: calc(100vh - 190px);
+    padding: 46px 40px;
+    background-color: #fafafa;
+    overflow: scroll;
+    }
+  }
+}
+  .chat-form {
+    height: 90px;
+    padding: 20px 40px;
+    background-color: #d2d2d2;
+
+    form {
+      display: flex;
+    .input-box{
+      display: flex;
+      width:100%;
+      position: relative;
+      &__text{
+          height: 50px;
+          width: 700px;
+          color:#434a54;
+          border-style: none;
+          padding: 0 40px 0 10px;
+        }
+        &__image{
+          position: absolute;
+          top: 10px;
+          right: 10px;
+          cursor: pointer;
+          font: size 1.3rem;
+
+          &__file {
+            display: none;
+          }
+        }
+      }
+    }
+
+    .submit-btn{
+      width: 100px;
+      height: 51px;
+      padding: 0 30px;
+      background-color: #38aef0;
+      color: white;
+      cursor: pointer;
+    
+  }
