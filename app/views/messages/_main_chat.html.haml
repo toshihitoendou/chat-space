@@ -1,14 +1,21 @@
-.chat-main_message_list
-test2 
 .chat-main
   .main-header
-  .main-header__box
+    .main-header__left-box
+      .main-header__left-box__current-group 
+        test
+      .main-header__left-box__member-list 
+        member: test
+    %div.main-header__edit-btn
+      =link_to '#' ,class: "main-header__edit-btn__link" do
+        Edit
+      
+
   .messages
   .chat-form
-    %form.new_message
+    %form._chat-main
       .input-box
         %input{type:"text",class:"input-box__text",placeholder: "type a message"}
         %label{class: "input-box__image"}
           = icon('fas', 'image')
           %input{type: "file", class: "input-box__image__file"}
-      %input{type: "submit",class: "submit-btn"}
+      %input{type: "submit",class: "submit-btn"} 
