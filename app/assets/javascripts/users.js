@@ -69,6 +69,5 @@ $(function() {
     $(this)
       .parent()
       .remove()
-    });
-  
-    });
+  });
+});
