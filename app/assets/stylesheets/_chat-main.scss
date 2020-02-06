@@ -16,7 +16,7 @@
         margin-top: 35px;
       }
       &__member-list {
-        font-size: 15px;
+        font-size: 12px;
         color: #999999;
         display: flex;
       }
@@ -29,6 +29,10 @@
       border: solid 1px #38aef0;
       position: absolute;
       right: 40px;
+
+       a{ 
+         text-decoration: none;
+      }
      }
    }
    .messages {

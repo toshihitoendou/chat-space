@@ -2,9 +2,11 @@
   .main-header
     .main-header__left-box
       .main-header__left-box__current-group 
-        test
+        = @group.name
       .main-header__left-box__member-list 
-        member: test
+        member: 
+        - @group.users.each do |user|
+          = user.name
     %div.main-header__edit-btn
       =link_to edit_group_path(@group) ,class: "main-header__edit-btn__link" do
         Edit
